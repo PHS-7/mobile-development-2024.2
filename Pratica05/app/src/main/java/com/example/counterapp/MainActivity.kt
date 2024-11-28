@@ -8,6 +8,7 @@ import androidx.compose.material.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.counterapp.ui.theme.CounterAppTheme
@@ -72,9 +73,10 @@ fun CounterApp() {
                         ?: 0.0 // Adiciona o valor digitado ao resultado
                     input = "" // Limpa o campo de entrada
                 },
-                modifier = Modifier.weight(1f) // O botão ocupa metade da linha
+                modifier = Modifier.weight(1f), // O botão ocupa metade da linha
+                colors = ButtonDefaults.buttonColors(Color.Blue)
             ) {
-                Text("Incrementar")
+                Text("Incrementar", color = Color.White)
             }
             // Botão Decrementar
             Button(
@@ -82,9 +84,10 @@ fun CounterApp() {
                     result -= input.toDoubleOrNull() ?: 0.0 // Subtrai o valor digitado do resultado
                     input = "" // Limpa o campo de entrada
                 },
-                modifier = Modifier.weight(1f) // O botão ocupa metade da linha
+                modifier = Modifier.weight(1f), // O botão ocupa metade da linha,
+                colors = ButtonDefaults.buttonColors(Color.Red)
             ) {
-                Text("Decrementar")
+                Text("Decrementar", color = Color.White)
             }
         }
 
@@ -135,5 +138,14 @@ fun CounterApp() {
         ) {
             Text("Limpar")
         }
+    }
+    Column(
+        horizontalAlignment = Alignment.CenterHorizontally, // Alinhamento horizontal centralizado
+        modifier = Modifier
+            .fillMaxSize() // Ocupa todo o espaço disponível
+            .padding(16.dp), // Adiciona espaçamento nas bordas
+        verticalArrangement = Arrangement.Center // Centraliza os elementos verticalmente
+    ) {
+        Row {  }
     }
 }
