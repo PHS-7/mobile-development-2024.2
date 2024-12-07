@@ -16,7 +16,6 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.ExperimentalComposeApi
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -28,8 +27,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import com.example.planetapp.R
 
-@OptIn(ExperimentalMaterial3Api::class)
-@ExperimentalComposeApi
+@ExperimentalMaterial3Api
 @Composable
 fun TopAppBarWithMenu(
     onSettingsClick: () -> Unit,

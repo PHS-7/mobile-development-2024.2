@@ -9,12 +9,13 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.compose.currentBackStackEntryAsState
+import com.example.planetapp.navigation.BottomBarScreen
 
 
 @Composable
 fun BottomNavigationBar(navController: NavController) {
     val screens = listOf(
-        BotttomBarScreen.Home,
+        BottomBarScreen.Home,
         BottomBarScreen.Favorites
     )
 

@@ -22,7 +22,7 @@ val planetList = listOf(
         distanceFromSun = "57.9 million km",
         diameter = "4,879 km",
         characteristics = "Smallest planet, no atmosphere, extreme temperatures.",
-        imageRes = R.drawable.mercurio
+        imageRes = R.drawable.mercury
     ), Planet(
         id = 2,
         name = "Venus",
@@ -31,7 +31,7 @@ val planetList = listOf(
         distanceFromSun = "108.2 million km",
         diameter = "12,104 km",
         characteristics = "Thick atmosphere, hottest planet, similar in size to Earth.",
-        imageRes = R.drawable.venus
+        imageRes = R.drawable.venus_png
     ), Planet(
         id = 3,
         name = "Earth",
@@ -40,7 +40,7 @@ val planetList = listOf(
         distanceFromSun = "149.6 million km",
         diameter = "12,742 km",
         characteristics = "Supports life, has water and atmosphere.",
-        imageRes = R.drawable.terra
+        imageRes = R.drawable.earth
 
     ), Planet(
         id = 4,
@@ -50,7 +50,7 @@ val planetList = listOf(
         distanceFromSun = "227.9 million km",
         diameter = "6,779 km",
         characteristics = "Known as the Red Planet, has the largest volcano in the solar system.",
-        imageRes = R.drawable.marte
+        imageRes = R.drawable.mars
     ), Planet(
         id = 5,
         name = "Jupiter",
@@ -59,7 +59,7 @@ val planetList = listOf(
         distanceFromSun = "778.5 million km",
         diameter = "139,820 km",
         characteristics = "Largest planet, famous for its Great Red Spot.",
-        imageRes = R.drawable.jupiter
+        imageRes = R.drawable.jupiter_png
     ), Planet(
         id = 6,
         name = "Saturn",
@@ -68,7 +68,7 @@ val planetList = listOf(
         distanceFromSun = "1.4 billion km",
         diameter = "116,460 km",
         characteristics = "Famous for its prominent ring system.",
-        imageRes = R.drawable.saturno
+        imageRes = R.drawable.saturn
     ), Planet(
         id = 7,
         name = "Uranus",
@@ -77,7 +77,7 @@ val planetList = listOf(
         distanceFromSun = "2.9 billion km",
         diameter = "50,724 km",
         characteristics = "Rotates on its side, has faint rings.",
-        imageRes = R.drawable.urano
+        imageRes = R.drawable.uranus
     ), Planet(
         id = 8,
         name = "Neptune",
@@ -86,6 +86,6 @@ val planetList = listOf(
         distanceFromSun = "4.5 billion km",
         diameter = "49,244 km",
         characteristics = "Furthest planet from the Sun, has strong winds.",
-        imageRes = R.drawable.netuno
+        imageRes = R.drawable.neptune
     )
 )
