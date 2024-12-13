@@ -41,6 +41,14 @@ android {
 
 dependencies {
 
+    implementation (libs.material3)
+    implementation (libs.ui.tooling.preview)
+    implementation (libs.androidx.navigation.compose)
+    implementation (libs.androidx.runtime.livedata)
+    implementation (libs.androidx.core.splashscreen)
+    implementation (libs.androidx.material.icons.core.v1xx)
+    implementation (libs.androidx.material.icons.extended.v1xx)
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -49,6 +57,7 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
